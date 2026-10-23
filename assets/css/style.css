@@ -103,11 +103,23 @@ nav ul.menu-principal a:hover {
     padding: 2rem;
     
     display: grid;
-    /* repeat(4, 1fr) significa: máximo 4 columnas que se reparten el espacio */
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); 
-    gap: 20px;
+    /* Esto hace que las tarjetas midan exactamente 250px y no se estiren más */
+    grid-template-columns: repeat(auto-fit, 250px);
+    justify-content: center; /* Centra todo el bloque de tarjetas */
     align-content: start;
-    justify-content: center; /* <-- AGREGA ESTO */
+    gap: 20px;
+}
+
+/* ============================
+   PAGINACIÓN (Corregida)
+   ============================ */
+.contenedor2 {
+    /* Esto obliga a la paginación a saltar a la siguiente fila y ocupar todo el ancho */
+    grid-column: 1 / -1; 
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    width: 100%;
 }
 
 /* ============================
