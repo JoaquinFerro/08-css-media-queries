@@ -1,0 +1,12 @@
+# VS Code
+.vscode/
+
+# Sistema operativo (Windows)
+Thumbs.db
+Desktop.ini
+
+# Sistema operativo (macOS)
+.DS_Store
+
+# Sistema operativo (Linux)
+*~
